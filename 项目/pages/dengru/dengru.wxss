@@ -1,0 +1,64 @@
+/* 背景和容器 */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4095E5; /* 蓝色背景 */
+}
+
+/* 标题部分 */
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px; /* FZU字体最大 */
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 36px; /* 跨专业项目合作系统字体较大 */
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 输入框 */
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  font-size: 16px; /* 输入提示字体最小 */
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+/* 登入按钮 */
+.login-btn {
+  width: 80%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  font-size: 18px; /* 登入字体次之 */
+  border: none;
+  border-radius: 5px;
+}
+
+/* 忘记密码 */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  align-self: flex-end;
+  margin-right: 10%;
+}

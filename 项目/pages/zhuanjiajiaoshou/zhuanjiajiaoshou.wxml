@@ -1,0 +1,66 @@
+<view class="project-square-page">
+  <!-- 底部三选项分段器 -->
+  <view class="bottom-segmented-control">
+    <button class="segment" bindtap="goToPersonalCenter">个人中心</button>
+    <button class="segment selected">项目广场</button>
+    <button class="segment" bindtap="goToNotifications">我的通知</button>
+  </view>
+
+ <!-- 顶部三选项分段器 -->
+<view class="top-segmented-control">
+  <button class="segment" bindtap="goTodating">项目大厅</button>
+  <button class="segment selected" bindtap="goToProfessors">专家教授</button>
+  <button class="segment" bindtap="goToProjectManagement">项目管理</button>
+</view>
+
+  <!-- 输入框和按钮 -->
+  <view class="search-bar">
+    <input class="search-input" placeholder="请输入" />
+    <button class="create-project-button">搜索</button>
+  </view>
+
+  <!-- 第一个专家教授卡片 -->
+<view class="professor-card" bindtap="goToProfessorDetail">
+  <!-- 头像和名称行 -->
+  <view class="professor-info">
+    <view class="avatar"></view> <!-- 圆形头像 -->
+    <view class="professor-details">
+      <text class="professor-name">李教授</text>
+      <text class="more-options">...</text> <!-- 右侧详情按钮 -->
+    </view>
+  </view>
+
+  <!-- 个人简介 -->
+  <text class="professor-intro">机械领域专家</text>
+
+  <!-- 标签模块 -->
+  <view class="tag-list">
+    <view class="tag">机械</view>
+    <view class="tag">工程</view>
+    <view class="tag">机器人</view>
+  </view>
+</view>
+
+<!-- 第二个专家教授卡片 -->
+<view class="professor-card" bindtap="goToProfessorDetail">
+  <!-- 头像和名称行 -->
+  <view class="professor-info">
+    <view class="avatar"></view> <!-- 圆形头像 -->
+    <view class="professor-details">
+      <text class="professor-name">林教授</text>
+      <text class="more-options">...</text> <!-- 右侧详情按钮 -->
+    </view>
+  </view>
+
+  <!-- 个人简介 -->
+  <text class="professor-intro">网络安全领域专家</text>
+
+  <!-- 标签模块 -->
+  <view class="tag-list">
+    <view class="tag">网络安全</view>
+    <view class="tag">加密</view>
+    <view class="tag">计算机</view>
+  </view>
+</view>
+
+</view>

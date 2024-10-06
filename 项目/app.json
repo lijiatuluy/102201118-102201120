@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/xiangmuguanli/xiangmuguanli",
+    "pages/logs/logs",
+    "pages/dengru",
+    "pages/dengru/dengru",
+    "pages/wangjimima",
+    "pages/wangjimima/wangjimima",
+    "pages/shuruyanzhengma/shuruyanzhengma",
+    "pages/xiugaimima/xiugaimima",
+    "pages/chongzhimima/chongzhimima",
+    "pages/xiangmuguangchang/xiangmuguangchang",
+    "pages/index/index",
+    "pages/xiangmuxiangqing/xiangmuxiangqing",
+    "pages/zhuanjiajiaoshou/zhuanjiajiaoshou"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

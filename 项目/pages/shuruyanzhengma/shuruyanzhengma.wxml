@@ -1,0 +1,20 @@
+<view class="input-code-page">
+  <!-- 顶部白色矩形，显示 返回 和 输入验证码 -->
+  <view class="top-bar">
+    <text class="back-button" bindtap="goBack">返回</text>
+    <text class="title">输入验证码</text>
+  </view>
+
+  <view class="content">
+    <!-- 请输入短信验证码，显示在输入框上方 -->
+    <view class="input-section">
+      <text class="label">请输入短信验证码</text>
+      <view class="code-input-container">
+        <input class="code-input" placeholder="请输入您的验证码" />
+      </view>
+    </view>
+
+    <!-- 下一步按钮 -->
+    <button class="next-button" bindtap="Next">下一步</button>
+  </view>
+</view>
