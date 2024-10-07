@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="notifications-section">
+    <block wx:for="{{notifications}}" wx:key="id">
+      <view class="notification-item">
+        <text>{{item.message}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="footer">
+    <view class="tab-item" bindtap="goToPersonalCenter">
+      <text>个人中心</text>
+    </view>
+    <view class="tab-item" bindtap="goToProjectManagement">
+      <text>项目广场</text>
+    </view>
+    <view class="tab-item selected">
+      <text>我的通知</text>
+    </view>
+  </view>
+</view>
