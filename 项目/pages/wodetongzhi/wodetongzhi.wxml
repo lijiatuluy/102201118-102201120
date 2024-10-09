@@ -1,0 +1,40 @@
+<view class="project-square-page">
+  <!-- 底部三选项分段器 -->
+  <view class="bottom-segmented-control">
+    <button class="segment" bindtap="goToPersonalCenter">个人中心</button>
+    <button class="segment" bindtap="goToProjectManagement">项目广场</button>
+    <button class="segment selected" >我的通知</button>
+  <!-- segment selected用于选定元素 -->
+  </view>
+
+  
+
+ <!-- 顶部三选项分段器 -->
+<view class="top-segmented-control">
+  <button class="segment selected">通知</button>
+  <button class="segment" bindtap="goToChat">私讯</button>
+  <button class="segment" bindtap="goToShenqing">新申请</button>
+</view>
+
+
+  <!-- 第一个项目卡片 -->
+<view class="project-card" bindtap = "xiangqing2">
+  <text class="project-title">您的入队请求正在审核中</text>
+  <view class="project-info">
+    <view class="tag">计算机学院</view>
+    <view class="tag">智能电视开发</view>
+    <text class="date">2024年6月5日</text>
+  </view>
+</view>
+
+<!-- 第二个项目卡片 -->
+<view class="project-card">
+  <text class="project-title" bindtap = "xiangqing">您的入队请求已被批准</text>
+  <view class="project-info">
+    <view class="tag">计算机学院</view>
+    <view class="tag">智能电冰箱</view>
+    <text class="date">2024年5月17日</text>
+  </view>
+</view>
+    
+</view>

@@ -1,0 +1,66 @@
+<view class="project-square-page">
+  <!-- 底部三选项分段器 -->
+  <view class="bottom-segmented-control">
+    <button class="segment" bindtap="goToPersonalCenter">个人中心</button>
+    <button class="segment selected">项目广场</button>
+    <button class="segment" bindtap="goToNotifications">我的通知</button>
+  </view>
+
+  <!-- 顶部三选项分段器 -->
+  <view class="top-segmented-control">  
+    <button class="segment" bindtap="goTodating">项目大厅</button>
+    <button class="segment" bindtap="goToProfessors">专家教授</button>
+    <button class="segment selected" >项目管理</button>
+  </view>
+
+  <!-- 正方形按钮区域 -->
+  <view class="button-container">
+    <button class="square-button" bindtap="showCreatedProjects">我创建的</button>
+    <button class="square-button" bindtap="showJoinedProjects">我加入的</button>
+  </view>
+
+  <!-- 项目卡片区域 -->
+  <view wx:if="{{activeTab === 'created'}}" class="project-list">
+    <view class="project-card">
+      <view class="avatar"></view>
+      <view class="project-info">
+        <text class="name">智能电表箱</text>
+      </view>
+      <view class="actions">
+        <button class="action-button" bindtap="editProject">编辑项目</button>
+        <button class="action-button" bindtap="publishTask">发布任务</button>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{activeTab === 'joined'}}" class="project-list">
+    <view class="project-card">
+      <view class="avatar"></view>
+      <view class="project-info">
+        <text class="name">智能电视</text>
+      </view>
+      <view class="actions">
+        <button class="action-button" bindtap="showTasks">我的任务</button> <!-- 触发弹出任务框 -->
+        <button class="action-button" bindtap="leaveProject">退出项目</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 弹出任务框 -->
+  <view wx:if="{{showTaskPopup}}" class="task-popup">
+    <text class="popup-title">任务列表</text>
+    <view class="task-item">
+      <text>任务一</text>
+      <button class="confirm-button" bindtap="confirmTask('任务一')">确认完成</button>
+    </view>
+    <view class="task-item">
+      <text>任务二</text>
+      <button class="confirm-button" bindtap="confirmTask('任务二')">确认完成</button>
+    </view>
+    <view class="task-item">
+      <text>任务三</text>
+      <button class="confirm-button" bindtap="confirmTask('任务三')">确认完成</button>
+    </view>
+    <button class="close-popup-button" bindtap="closeTasks">关闭</button>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  height: 100vh; /* 使容器高度占满整个视口 */
+  padding: 20px;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5; /* 修改边框颜色 */
+}
+
+.tab-item {
+  flex: 1;
+  padding: 30px; /* 修改内边距 */
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold; /* 字体加粗 */
+}
+
+.selected {
+  color: #007aff; /* 修改选中颜色 */
+  font-weight: bold;
+}

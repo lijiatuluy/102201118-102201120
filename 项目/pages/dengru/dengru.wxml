@@ -1,0 +1,17 @@
+<view class="container">
+  <!-- 顶部文字 -->
+  <view class="header">
+    <text class="title">FZU</text>
+    <text class="subtitle">跨专业项目合作系统</text>
+  </view>
+
+  <!-- 输入框 -->
+  <input class="input" placeholder="请输入您的学号或工号" bindinput="handleInput" data-field="id"/>
+  <input class="input" placeholder="请输入您的密码" password="true" bindinput="handleInput" data-field="password"/>
+
+  <!-- 登入按钮 -->
+  <button class="login-btn" bindtap="handleLogin">登入</button>
+
+  <!-- 忘记密码 -->
+  <text class="forgot-password" bindtap="handleForgotPassword">忘记密码</text>
+</view>
