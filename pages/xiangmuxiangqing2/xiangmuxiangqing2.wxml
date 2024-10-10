@@ -1,0 +1,49 @@
+<view class="project-details-page">
+  <view class="top-bar">
+    <text class="back-button" bindtap="goBack">返回</text>
+    <text class="title">项目详情</text>
+  </view>
+  <!-- 可滚动区域 -->
+  <view class="scroll-container">
+    
+    <!-- 项目成员模块 -->
+    <view class="section">
+      <text class="section-title">项目成员</text>
+      <view class="member-list">
+        <view class="member">
+          <text class="role">项目发起者：</text>
+          <text class="name">陆教授</text>
+        </view>
+        <view class="member">
+          <text class="role">我申请的任务：</text>
+          <text class="name">编程人员</text>
+        </view>
+        <view class="member">
+          <text class="role">任务详情：</text>
+          <text class="name">进行智能电视的基础架构与开发</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 项目标签模块 -->
+    <view class="section">
+      <text class="section-title">项目标签</text>
+      <view class="tag-list">
+        <view class="tag">计算机</view>
+        <view class="tag">Python</view>
+        <view class="tag">机械</view>
+      </view>
+    </view>
+
+    <!-- 项目简介模块 -->
+    <view class="section">
+      <text class="section-title">项目简介</text>
+      <view class="description">
+        <text>
+          本项目旨在结合大数据、计算机算法及现代数学方法，利用前沿技术优化当前流程，提供高效、用户友好的解决方案。希望推动科技进步，并将成果应用到实际生活场景中。
+        </text>
+      </view>
+    </view>
+
+  </view>
+</view>

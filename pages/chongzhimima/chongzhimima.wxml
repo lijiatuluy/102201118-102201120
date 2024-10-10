@@ -1,0 +1,34 @@
+<view class="reset-password-page">
+  <!-- 顶部白色矩形，显示 返回 和 重置密码 -->
+  <view class="top-bar">
+    <text class="back-button" bindtap="goBack">返回</text>
+    <text class="title">重置密码</text>
+  </view>
+
+  <view class="content">
+    <!-- 输入原密码，显示在输入框上方 -->
+    <view class="input-section">
+      <text class="label">输入原密码</text>
+      <view class="password-input-container">
+        <input class="password-input" placeholder="请输入原密码" password="true" />
+      </view>
+    </view>
+
+    <!-- 输入新密码 -->
+    <view class="input-section">
+      <text class="label" style="margin-top: 60px;">输入新密码</text>
+      <!-- 第一行文本框，提示输入新密码 -->
+      <view class="password-input-container">
+        <input class="password-input" placeholder="请输入新密码" password="true" />
+      </view>
+
+      <!-- 第二行文本框，提示确认新密码 -->
+      <view class="password-input-container">
+        <input class="password-input" placeholder="请确认新密码" password="true" />
+      </view>
+    </view>
+
+    <!-- 确认修改按钮 -->
+    <button class="confirm-button" bindtap="OK">确认修改</button>
+  </view>
+</view>

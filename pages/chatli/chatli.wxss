@@ -1,0 +1,64 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.back-button {
+  margin-right: auto; /* 将按钮推到最左侧 */
+}
+
+.sender-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px; /* 添加左边距，使其与按钮保持距离 */
+}
+
+.messages-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.message-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.my-message {
+  background-color: #daf8cb;
+  align-self: flex-end;
+}
+
+.other-message {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}

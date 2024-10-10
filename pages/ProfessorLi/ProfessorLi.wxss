@@ -1,0 +1,70 @@
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.back-button {
+  margin-right: auto;
+  color: #007aff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.professor-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007aff;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 150%;
+  height: 2px;
+  background-color: #007aff;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-content {
+  font-size: 16px;
+  color: #666;
+}
+
+.chat-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+}

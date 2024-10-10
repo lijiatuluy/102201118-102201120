@@ -1,0 +1,81 @@
+<view class="project-details-page">
+  <view class="top-bar">
+    <text class="back-button" bindtap="goBack">返回</text>
+    <text class="title">项目详情</text>
+  </view>
+  <!-- 可滚动区域 -->
+  <view class="scroll-container">
+    
+    <!-- 项目成员模块 -->
+    <view class="section">
+      <text class="section-title">项目成员</text>
+      <view class="member-list">
+        <view class="member">
+          <text class="role">项目发起者：</text>
+          <text class="name">李教授</text>
+        </view>
+        <view class="member">
+          <text class="role">编程人员：</text>
+          <text class="name">刘同学</text>
+        </view>
+        <view class="member">
+          <text class="role">编程人员：</text>
+          <text class="name">王同学</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 项目标签模块 -->
+    <view class="section">
+      <text class="section-title">项目标签</text>
+      <view class="tag-list">
+        <view class="tag">计算机</view>
+        <view class="tag">Java</view>
+        <view class="tag">数学</view>
+        <view class="tag">大数据</view>
+      </view>
+    </view>
+
+    <!-- 项目简介模块 -->
+    <view class="section">
+      <text class="section-title">项目简介</text>
+      <view class="description">
+        <text>
+          本项目旨在结合大数据、计算机算法及现代数学方法，创建智能化平台，帮助用户解决实际问题。
+          我们的团队由多个专业背景的成员组成，目标是利用前沿技术优化当前流程，提供高效、用户友好
+          的解决方案。通过与企业和社会的合作，我们希望推动科技进步，并将成果应用到实际生活场景中。
+        </text>
+      </view>
+    </view>
+
+    <view class="section">
+  <text class="section-title">人员需求</text>
+
+  <!-- 表头 -->
+  <view class="requirement-header">
+    <text class="header-item">职位</text>
+    <text class="header-item">需求人数</text>
+  </view>
+
+  <!-- 人员需求内容 -->
+  <view class="requirement-list">
+    <view class="requirement-item">
+      <text class="job">策划</text>
+      <text class="number">2人</text>
+      <button class="apply-button">申请</button>
+    </view>
+    <view class="requirement-item">
+      <text class="job">编程</text>
+      <text class="number">1人</text>
+      <button class="apply-button">申请</button>
+    </view>
+    <view class="requirement-item">
+      <text class="job">美工</text>
+      <text class="number">3人</text>
+      <button class="apply-button">申请</button>
+    </view>
+  </view>
+</view>
+
+  </view>
+</view>

@@ -1,0 +1,60 @@
+<scroll-view scroll-y="true" class="project-square-page">
+  <!-- 顶栏 -->
+  <view class="header">
+    <button class="back-button" bindtap="goBack">返回</button>
+    <text class="title">新建项目</text>
+  </view>
+
+  <!-- 项目成员块 -->
+  <view class="block">
+    <text class="block-title">项目成员</text>
+    <view class="form-row">
+      <text>项目发起者</text>
+      <input type="text" placeholder="请输入项目发起者" value="{{initiator}}" bindinput="onInitiatorInput" />
+    </view>
+
+    <view wx:for="{{members}}" wx:key="index" class="form-row">
+      <input type="text" placeholder="请输入职位" value="{{item.position}}" bindinput="onMemberPositionInput" data-index="{{index}}" />
+      <input type="text" placeholder="请输入人员" value="{{item.name}}" bindinput="onMemberNameInput" data-index="{{index}}" />
+      <button class="delete-button" bindtap="removeMember" data-index="{{index}}">删除</button>
+    </view>
+    <button class="add-button" bindtap="addMember">添加成员</button>
+  </view>
+
+  <!-- 项目标签块 -->
+  <view class="block">
+    <text class="block-title">项目标签</text>
+    <view wx:for="{{tags}}" wx:key="index" class="form-row">
+      <input type="text" placeholder="请输入标签" value="{{item}}" bindinput="onTagInput" data-index="{{index}}" />
+      <button class="delete-button" bindtap="removeTag" data-index="{{index}}">删除</button>
+    </view>
+    <button class="add-button" bindtap="addTag">添加标签</button>
+  </view>
+
+  <!-- 项目简介块 -->
+  <!-- 项目简介块 -->
+<!-- 项目简介块 -->
+<view class="block">
+  <text class="block-title">项目简介</text>
+  <textarea 
+    placeholder="第一行内容被视为项目标题，两次回车后输入简介" 
+    value="{{introduction}}" 
+    bindinput="onIntroductionInput" 
+    bindblur="onIntroductionBlur"
+  ></textarea>
+</view>
+
+  <!-- 人员需求块 -->
+  <view class="block">
+    <text class="block-title">人员需求</text>
+    <view wx:for="{{requirements}}" wx:key="index" class="form-row">
+      <input type="text" placeholder="请输入职位" value="{{item.position}}" bindinput="onRequirementPositionInput" data-index="{{index}}" />
+      <input type="number" placeholder="请输入需求人数" value="{{item.number}}" bindinput="onRequirementNumberInput" data-index="{{index}}" />
+      <button class="delete-button" bindtap="removeRequirement" data-index="{{index}}">删除</button>
+    </view>
+    <button class="add-button" bindtap="addRequirement">添加需求</button>
+  </view>
+
+  <!-- 确认新建按钮 -->
+  <button class="confirm-button" bindtap="confirmNewProject">确认新建</button>
+</scroll-view>

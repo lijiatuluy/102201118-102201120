@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="header">
+    <button class="back-button" bindtap="navigateBack">返回</button>
+    <text class="sender-name"></text>
+  </view>
+  <view class="messages-section">
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message-item {{item.sender === '我' ? 'my-message' : 'other-message'}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="input-section">
+    <input class="message-input" bindinput="bindInput" value="{{inputMessage}}" />
+    <button class="send-button" bindtap="sendMessage">发送</button>
+  </view>
+</view>

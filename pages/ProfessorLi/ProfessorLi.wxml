@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="header">
+    <button class="back-button" bindtap="navigateBack">返回             </button>
+    <text class="title"></text>
+  </view>
+  <view class="content">
+    <text class="professor-name">{{professorName}}</text>
+    <view class="underline"></view>
+    <view class="info-box">
+      <text class="info-title">招生需求<br/></text>
+      <text class="info-content">{{researchAreas}}</text>
+    </view>
+    <view class="info-box">
+      <text class="info-title">联系方式<br/></text>
+      <text class="info-content">{{contactInfo}}</text>
+    </view>
+    <view class="info-box">
+      <text class="info-title">开展中的项目<br/></text>
+      <text class="info-content">{{currentProjects}}</text>
+    </view>
+    <button class="chat-button" bindtap="sendFriendRequest">发起私聊申请</button>
+  </view>
+</view>
